@@ -41,23 +41,22 @@ public class DaftarMenuActivity extends AppCompatActivity {
     public ArrayList<Menu> isiMenu(){
         ArrayList<Menu> data = new ArrayList<>();
 
-        data.add(new Menu(R.drawable.bakso,"Bakso Spesial", "Harga : Rp 18.000", "Campuran daging sapi giling dan tepung tapioka"));
+        data.add(new Menu(R.drawable.appetizer,"Appetizer", "Harga : Rp 18.000", "Appetizer dengan cita rasa pedas dan lembut"));
 
-        data.add(new Menu(R.drawable.soto,"Soto Betawi", "Harga : Rp 19.000","Jerohan, daging sapi, kentang,batang serai, daun salam, daun jeruk, santan sedang kentalnya, air jeruk limo, bawang goreng, daun bawang, garam, gula"));
+        data.add(new Menu(R.drawable.barbeque,"Barbeque", "Harga : Rp 19.000","Tekstur daging yang lembut empuk, serta kulit yang begitu renyah. Rasanya lezat dengan wangi rempah"));
 
-        data.add(new Menu(R.drawable.nasiayam,"Nasi Ayam Goreng", "Harga : Rp 21.000","Ayam, mentimun, sambal terasi,tomat, nasi, sambal kecap"));
+        data.add(new Menu(R.drawable.beef,"Beef", "Harga : Rp 21.000","Masakan dengan cita rasa pedas, dengan siraman saus kungpao dan kacang goreng"));
 
-        data.add(new Menu(R.drawable.nasibebek,"Nasi Bebek", "Harga : Rp 22.500","Bebek muda, nasi, bawang putih, bawang merah, kunyit, jahe, ketumbar, cabai"));
+        data.add(new Menu(R.drawable.seafood,"Seafood", "Harga : Rp 22.500","Ikan dengan saos asam manis, serta topping mix vegetables"));
 
-        data.add(new Menu(R.drawable.nasipecel,"Nasi Pecel Komplit", "Harga : Rp 15.000","Kacang panjang, taoge, mentimun, daun singkong, daun kemangi,  kencur, gula merah, garam, cabai, kecombrang, daun jeruk purut, kacang tanah sangrai "));
+        data.add(new Menu(R.drawable.soup,"Soup", "Harga : Rp 15.000","Berisi udang, cumi dan baso ikan. Serta berbagai sayuran seperti brokoli, wortel dan jamur"));
 
-        data.add(new Menu(R.drawable.nasiwagyu,"Nasi Wagyu", "Harga : Rp 21.000","Nasi, daging kambing, telur"));
+        data.add(new Menu(R.drawable.vegetables,"Vegetables", "Harga : Rp 21.000","Terdiri dari broccoli dan jamur hitam, serta tumisan bawang putih"));
 
-        data.add(new Menu(R.drawable.satemadura,"Sate Madura", "Harga : Rp 16.000","Sate, garam, merica, bawang putih, kecap manis, bawang merah, sambal"));
+        data.add(new Menu(R.drawable.porridge,"Porridge", "Harga : Rp 16.000","Bubur polos dengan saus hongkong dan topping cakwe. kacang tanah serta potongan ayam hainan"));
 
-        data.add(new Menu(R.drawable.miegorengspesial,"Mie Goreng Spesial", "Harga : Rp 15.000","Mie, telur, cabai, bawang putih, daging sapi, tomat"));
+        data.add(new Menu(R.drawable.drinks,"Drinks", "Harga : Rp 15.000","Berisi topping kacang merah, jagung manis, jelly melon, strawberry dan ice cream vanilla"));
 
-        data.add(new Menu(R.drawable.miekuah,"Mie Kuah","Harga : Rp 14.500", "Mie, bawang goreng, seledri cina, daun bawang, cabai"));
 
         return data;
 

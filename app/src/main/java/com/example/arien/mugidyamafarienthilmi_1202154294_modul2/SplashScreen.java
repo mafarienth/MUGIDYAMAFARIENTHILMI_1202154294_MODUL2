@@ -27,7 +27,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 Intent i = new Intent(SplashScreen.this, MainActivity.class);
                 startActivity(i);
-                Toast.makeText(SplashScreen.this,"VENYAMILIAFITRI_1202150243", Toast.LENGTH_LONG).show();
+                Toast.makeText(SplashScreen.this,"MUGIDYAMAFARIENTHILMI_1202154294", Toast.LENGTH_LONG).show();
                 this.finish();
             }
             private void finish(){
