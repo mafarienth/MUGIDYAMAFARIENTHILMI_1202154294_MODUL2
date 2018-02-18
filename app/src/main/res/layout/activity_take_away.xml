@@ -18,7 +18,7 @@
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:text="Identitas Pemesan : "
         android:textAlignment="center"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorPrimary"
         android:textSize="24sp" />
 
     <EditText
@@ -60,13 +60,61 @@
         android:inputType="textLongMessage|textPersonName"
         android:textColor="@android:color/black" />
 
+
+    <TextView
+        android:id="@+id/identitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Pilih Waktu Pemesanan: "
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="199dp">
+
+        <Button
+            android:id="@+id/buttonEatbus"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:text="@string/tanggal"
+            android:onClick="showDatePickerDialog"
+            android:textSize="10sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/buttonAbnormal"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:text="@string/jam"
+            android:onClick="showTimePickerDialog"
+            android:textSize="10sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/pilihPesanan"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:text="Pilih Pesanan"
         android:onClick="pilih"
-        android:textColor="@android:color/holo_blue_dark" />
+        android:textSize="12sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark" />
+
 </LinearLayout>

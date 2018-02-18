@@ -14,25 +14,29 @@ import java.util.ArrayList;
 public class DetailMenuActivity extends AppCompatActivity {
     private ArrayList<Menu> menus;
     private String tanda;
-    private TextView nama, harga, komposisi;
+    private TextView nama, harga, detail;
     private ImageView photo;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_menu);
 
+        //Mengambil referensi dan menaruhnya ke variable
         nama = (TextView)findViewById(R.id.tvMenu);
         harga = (TextView)findViewById(R.id.tvHarga);
-        komposisi = (TextView)findViewById(R.id.tvDetail);
+        detail = (TextView)findViewById(R.id.tvDetail);
         photo = (ImageView)findViewById(R.id.ivPhoto);
 
+        //Untuk mengambil dan mengeset info menu yang diklik
         menus = DaftarMenuActivity.menuList;
         Intent c = getIntent();
         tanda = c.getStringExtra("MenuID");
         Menu menu = menus.get(Integer.parseInt(tanda));
         nama.setText(menu.getNama());
         harga.setText(menu.getHarga());
-        komposisi.setText(menu.getKomposisi());
+        detail.setText(menu.getdetail());
         photo.setImageResource(menu.getPhoto());
 
     }

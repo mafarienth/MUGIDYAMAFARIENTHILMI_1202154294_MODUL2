@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MUGIDYAMAFARIENTHILMI_1202154294_MODUL2</string>
     <string name="todo">TODO</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="jam">Jam</string>
     <string-array name="meja">
         <item>Meja 1</item>
         <item>Meja 2</item>
@@ -13,4 +15,6 @@
         <item>Meja 9</item>
         <item>Meja 10</item>
     </string-array>
+    <string name="date_picker">datePicker</string>
+    <string name="time_picker">timePicker</string>
 </resources>

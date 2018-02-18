@@ -23,6 +23,7 @@ public class MenusAdapter extends RecyclerView.Adapter<MenusAdapter.MyViewHolder
         public ImageView photo;
         public TextView nama, harga, tanda;
 
+        //Mengambil referensi dan menaruhnya ke variable
         public MyViewHolder(View itemView) {
             super(itemView);
             photo = (ImageView) itemView.findViewById(R.id.photo);
@@ -39,6 +40,7 @@ public class MenusAdapter extends RecyclerView.Adapter<MenusAdapter.MyViewHolder
     }
 
 
+    //berisi informasi tampilan untuk menampilkan satu item dari layout item
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
@@ -47,6 +49,7 @@ public class MenusAdapter extends RecyclerView.Adapter<MenusAdapter.MyViewHolder
         return new MyViewHolder(itemView);
     }
 
+    //menghubungkan data ke holder tampilan.
     @Override
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
         Menu menu = menusList.get(position);

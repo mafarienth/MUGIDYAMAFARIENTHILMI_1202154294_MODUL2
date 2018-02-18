@@ -19,18 +19,22 @@ public class DineInActivity extends AppCompatActivity implements AdapterView.OnI
     private EditText name;
     private Spinner meja;
     private Button pilih;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dine_in);
 
+        //Mengambil referensi dan menaruhnya ke variable
         name = (EditText)findViewById(R.id.name);
         meja = (Spinner) findViewById(R.id.spinner);
         pilih = (Button) findViewById(R.id.pilih);
 
+        //Membuat spinner untuk list meja dengan dropdown
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.meja, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
+        //jika pilihan meja tidak samadengan null, makan adapter akan dijalankan
         if (meja != null) {
             meja.setAdapter(adapter);
         }
@@ -48,6 +52,7 @@ public class DineInActivity extends AppCompatActivity implements AdapterView.OnI
 
     }
 
+    //Pengisian informasi sebelum memilih menu
     public void pilih(View view) {
         String spinner = meja.getSelectedItem().toString();
         String a = name.getText().toString();

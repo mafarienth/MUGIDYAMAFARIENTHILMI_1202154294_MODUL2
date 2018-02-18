@@ -27,7 +27,7 @@
         android:layout_marginBottom="@dimen/activity_horizontal_margin"
         android:text="Pilih Menu : "
         android:textAlignment="center"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorPrimary"
         android:textSize="24sp" />
 
     <RadioGroup
@@ -42,7 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:text="Dine In"
-            android:textColor="@android:color/black" />
+            android:buttonTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary" />
 
         <RadioButton
             android:id="@+id/takeAway"
@@ -50,7 +51,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:text="Take Away"
-            android:textColor="@android:color/black" />
+            android:buttonTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary" />
     </RadioGroup>
 
     <Button
@@ -60,5 +62,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:text="Pesan Sekarang"
-        android:textColor="@android:color/holo_blue_dark" />
+        android:textSize="10sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark" />
 </LinearLayout>

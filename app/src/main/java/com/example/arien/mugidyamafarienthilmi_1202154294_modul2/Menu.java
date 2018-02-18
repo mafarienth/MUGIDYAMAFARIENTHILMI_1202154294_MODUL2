@@ -6,15 +6,14 @@ package com.example.arien.mugidyamafarienthilmi_1202154294_modul2;
 
 public class Menu {
     int photo;
-    private String nama, harga, komposisi;
+    private String nama, harga, detail;
 
-    public Menu(int photo, String nama, String harga, String komposisi) {
+    public Menu(int photo, String nama, String harga, String detail) {
         this.photo = photo;
         this.nama = nama;
         this.harga = harga;
-        this.komposisi = komposisi;
+        this.detail = detail;
     }
-
     public int getPhoto() {
         return photo;
     }
@@ -39,11 +38,11 @@ public class Menu {
         this.harga = harga;
     }
 
-    public String getKomposisi() {
-        return komposisi;
+    public String getdetail() {
+        return detail;
     }
 
-    public void setKomposisi(String komposisi) {
-        this.komposisi = komposisi;
+    public void setdetail(String detail) {
+        this.detail = detail;
     }
 }

@@ -18,11 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Mengambil referensi dan menaruhnya ke variable
         rg = (RadioGroup)findViewById(R.id.radioGroup);
         rb1 = (RadioButton)findViewById(R.id.dineIn);
         rb2 = (RadioButton)findViewById(R.id.takeAway);
         btPesan = (Button)findViewById(R.id.pesanSekarang);
 
+        //onClik Listener dengan radio button untuk memilih jenis pemesanan
         btPesan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

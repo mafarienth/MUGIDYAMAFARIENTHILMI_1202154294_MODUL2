@@ -25,9 +25,11 @@ public class DaftarMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar_menu);
 
+        //deklarasi recycler view untuk daftar menu
         menuList = isiMenu();
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
+        //Membuat Adapter untuk menampilkan list Menu
         mAdapter = new MenusAdapter(menuList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
@@ -37,26 +39,26 @@ public class DaftarMenuActivity extends AppCompatActivity {
     }
 
 
+//Array yang berisi data yang Menu
 
     public ArrayList<Menu> isiMenu(){
         ArrayList<Menu> data = new ArrayList<>();
 
-        data.add(new Menu(R.drawable.appetizer,"Appetizer", "Harga : Rp 18.000", "Appetizer dengan cita rasa pedas dan lembut"));
+        data.add(new Menu(R.drawable.appetizer,"Appetizer", "Harga : Rp 20.000", "Appetizer dengan cita rasa pedas dan lembut"));
 
-        data.add(new Menu(R.drawable.barbeque,"Barbeque", "Harga : Rp 19.000","Tekstur daging yang lembut empuk, serta kulit yang begitu renyah. Rasanya lezat dengan wangi rempah"));
+        data.add(new Menu(R.drawable.barbeque,"Barbeque", "Harga : Rp 40.000","Tekstur daging yang lembut empuk, serta kulit yang begitu renyah. Rasanya lezat dengan wangi rempah"));
 
-        data.add(new Menu(R.drawable.beef,"Beef", "Harga : Rp 21.000","Masakan dengan cita rasa pedas, dengan siraman saus kungpao dan kacang goreng"));
+        data.add(new Menu(R.drawable.beef,"Beef", "Harga : Rp 36.000","Masakan dengan cita rasa pedas, dengan siraman saus kungpao dan kacang goreng"));
 
-        data.add(new Menu(R.drawable.seafood,"Seafood", "Harga : Rp 22.500","Ikan dengan saos asam manis, serta topping mix vegetables"));
+        data.add(new Menu(R.drawable.seafood,"Seafood", "Harga : Rp 52.500","Ikan dengan saos asam manis, serta topping mix vegetables"));
 
-        data.add(new Menu(R.drawable.soup,"Soup", "Harga : Rp 15.000","Berisi udang, cumi dan baso ikan. Serta berbagai sayuran seperti brokoli, wortel dan jamur"));
+        data.add(new Menu(R.drawable.soup,"Soup", "Harga : Rp 25.000","Berisi udang, cumi dan baso ikan. Serta berbagai sayuran seperti brokoli, wortel dan jamur"));
 
-        data.add(new Menu(R.drawable.vegetables,"Vegetables", "Harga : Rp 21.000","Terdiri dari broccoli dan jamur hitam, serta tumisan bawang putih"));
+        data.add(new Menu(R.drawable.vegetables,"Vegetables", "Harga : Rp 30.000","Terdiri dari broccoli dan jamur hitam, serta tumisan bawang putih"));
 
-        data.add(new Menu(R.drawable.porridge,"Porridge", "Harga : Rp 16.000","Bubur polos dengan saus hongkong dan topping cakwe. kacang tanah serta potongan ayam hainan"));
+        data.add(new Menu(R.drawable.porridge,"Porridge", "Harga : Rp 18.000","Bubur polos dengan saus hongkong dan topping cakwe. kacang tanah serta potongan ayam hainan"));
 
         data.add(new Menu(R.drawable.drinks,"Drinks", "Harga : Rp 15.000","Berisi topping kacang merah, jagung manis, jelly melon, strawberry dan ice cream vanilla"));
-
 
         return data;
 
